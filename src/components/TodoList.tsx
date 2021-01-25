@@ -23,8 +23,6 @@ export const TodoList: React.FC<TodoListProps> = ({
 
   const handleChange = (id: number) => (event: React.ChangeEvent<HTMLInputElement>) => onToggle(event.target.checked, id);
 
-  console.log('TodoList_todos_from_props: ', todos)
-
   return (
     <ul>
       {todos.map(todo => {
