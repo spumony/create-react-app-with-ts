@@ -21,10 +21,13 @@ export const TodoList: React.FC<TodoListProps> = ({
     onRemove(id)
   }
 
+  console.log('TodoList_todos_from_props: ', todos)
+
   return (
     <ul>
       {todos.map(todo => {
         const classes = ['todo']
+
         if (todo.completed) {
           classes.push('completed')
         }
@@ -35,7 +38,8 @@ export const TodoList: React.FC<TodoListProps> = ({
               <input
                 type="checkbox"
                 checked={todo.completed}
-                onChange={onToggle.bind(null, todo.id)}
+                // onChange={onToggle.bind(null, todo.id)}
+                onChange={() => onToggle(todo.id)}
               />
               <span>{todo.title}</span>
               <i

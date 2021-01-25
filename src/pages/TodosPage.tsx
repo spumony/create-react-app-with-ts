@@ -33,9 +33,11 @@ export const TodosPage: React.FC = () => {
         if (todo.id === id) {
           todo.completed = !todo.completed
         }
+        console.log('toggleHandler_todo: ', todo)
         return todo
       })
     )
+    console.log('toggleHandler_todos: ', todos)
   }
 
   const removeHandler = (id: number) => {
