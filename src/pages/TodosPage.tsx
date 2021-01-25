@@ -27,11 +27,11 @@ export const TodosPage: React.FC = () => {
     setTodos(prev => [newTodo, ...prev])
   }
 
-  const toggleHandler = (id: number) => {
+  const toggleHandler = (checked: boolean, id: number) => {
     setTodos(prev =>
       prev.map(todo => {
         if (todo.id === id) {
-          todo.completed = !todo.completed
+          todo.completed = checked
         }
         console.log('toggleHandler_todo: ', todo)
         return todo
