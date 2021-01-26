@@ -7,7 +7,7 @@ export const AboutPage: React.FC = () => {
     <>
       <h1>Information Page</h1>
       <h5>
-        Project technologies stack: Typescript, JavaScript, HTML, MaterializeCSS
+        Technology stack: Typescript, JavaScript, HTML, MaterializeCSS
       </h5>
       <br />
       <hr />
