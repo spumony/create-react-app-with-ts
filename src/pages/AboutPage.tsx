@@ -12,7 +12,7 @@ export const AboutPage: React.FC = () => {
       <br />
       <hr />
       <br />
-      <button className="btn waves-effect waves-light indigo darken-4" onClick={() => history.push('/')}>
+      <button className="btn waves-effect waves-light indigo darken-4" onClick={() => history.push('/todo-ts')}>
         Back to Todo List
       </button>
     </>
