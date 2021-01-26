@@ -5,14 +5,15 @@ export const AboutPage: React.FC = () => {
   const history = useHistory()
   return (
     <>
-      <h1>Страница информации</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum
-        vero, repudiandae expedita beatae iure? Mollitia tempore quae qui
-        voluptatum.
-      </p>
-      <button className="btn" onClick={() => history.push('/')}>
-        Обратно к списку дел
+      <h1>Information Page</h1>
+      <h5>
+        Project technologies stack: Typescript, JavaScript, HTML, MaterializeCSS
+      </h5>
+      <br />
+      <hr />
+      <br />
+      <button className="btn waves-effect waves-light indigo darken-4" onClick={() => history.push('/')}>
+        Back to Todo List
       </button>
     </>
   )

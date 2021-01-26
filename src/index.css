@@ -12,9 +12,9 @@ code {
     monospace;
 }
 
-.px1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.p-5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .mt2 {

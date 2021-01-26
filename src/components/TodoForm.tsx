@@ -32,11 +32,11 @@ export const TodoForm: React.FC<TodoFormProps> = props => {
         ref={ref}
         type="text"
         id="title"
-        placeholder="Введите название дела"
+        placeholder="Add your new task"
         onKeyPress={keyPressHandler}
       />
       <label htmlFor="title" className="active">
-        Введите название дела
+        New task
       </label>
     </div>
   )
