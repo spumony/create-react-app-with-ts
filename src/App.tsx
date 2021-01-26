@@ -10,8 +10,8 @@ const App: React.FC = () => {
       <Navbar />
       <div className="container">
         <Switch>
-          <Route component={TodosPage} path="/" exact />
-          <Route component={AboutPage} path="/about" />
+          <Route component={TodosPage} path="/todo-ts" exact />
+          <Route component={AboutPage} path="/todo-ts/about" />
         </Switch>
       </div>
     </BrowserRouter>
